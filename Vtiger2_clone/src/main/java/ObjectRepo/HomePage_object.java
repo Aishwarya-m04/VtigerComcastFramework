@@ -13,6 +13,17 @@ public class HomePage_object {
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath = "//a[text()='Products']")
+	private WebElement products;
+	
+	public WebElement getProducts() {
+		return products;
+	}
+
+	public void setProducts(WebElement products) {
+		this.products = products;
+	}
+
 	@FindBy(xpath=("//a[text()='Organizations']"))
 	private WebElement Organization;
 	
